@@ -338,6 +338,8 @@ a:hover{
 
 /* ----------------------------- Inicio -----------------------------*/
 
+/* Imagen rotativa de inicio */
+
 .contenedor-ImagenInicio{
     background-image: url(/img/altus.webp);
     background-size: cover;
@@ -356,4 +358,119 @@ a:hover{
     height: 100%;
     object-fit: fill;
     mix-blend-mode: multiply;
+}
+
+/* Barra de navegarcion */
+
+.menu{
+    display: grid;
+    grid-template-areas: 
+      "contenedor-LogoInicio inicio searchbar publicar contenedor-BotonIniciarSesion";
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
+
+.contenedor-LogoInicio, .inicio, .searchbar, .publicar, .contenedor-BotonIniciarSesion{
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+    
+}
+
+.contenedor-LogoInicio{
+    grid-area: contenedor-LogoInicio;
+}
+
+.inicio{
+    grid-area: inicio;
+    justify-content: right;
+}
+
+.searchbar{
+    grid-area: searchbar;
+    justify-content: center;
+}
+
+.publicar{
+    grid-area: publicar;
+    justify-content: left;
+}
+
+.contenedor-BotonIniciarSesion{
+    grid-area: contenedor-BotonIniciarSesion;
+    justify-content: center;
+}
+
+.botonIniciarSesion{
+    background-color: #d8b33e;
+    border-radius: 7px;
+    border-style: none;
+    padding: 1vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    font-size: 2.5vh;
+    transition: background-color 0.3s ease;
+}
+
+.botonIniciarSesion:hover{
+    background-color: white;
+    color:#d8b33e;
+}
+
+/* Logo */
+
+.logo{
+    width: 20%;
+}
+
+/* Busqueda */
+
+.input-wrapper{
+    background-color: white;
+    padding: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Principal */
+
+.contenedor-Inicio{
+    display: grid;
+    grid-template-areas:
+    "lateralIzquierdo lateralDerecho"
+    "izquierdoInferior derechoInferior"
+    ;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    height: 100vh;
+}
+
+.lateralDerecho, .lateralIzquierdo, .izquierdoInferior, .derechoInferior{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lateralIzquierdo{
+    grid-area: lateralIzquierdo;
+    background-color: blue;
+    object-fit: fill;
+}
+
+.lateralDerecho{
+    grid-area: lateralDerecho;
+    background-color: red;
+}
+
+.izquierdoInferior{
+    grid-area: izquierdoInferior;
+    background-color: indigo;
+}
+
+.derechoInferior{
+    grid-area: derechoInferior;
+    background-color: green;
 }
