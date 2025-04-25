@@ -10,6 +10,20 @@ section{
     margin: auto;
 }
 
+body{
+    margin: 0;
+    position: relative;
+    padding-bottom: 2vh;
+    min-height: 100vh;
+}
+
+.cuerpo-Inicio{
+    margin: 0;
+    position: relative;
+    padding-bottom: 0vh;
+    min-height: 100vh;
+}
+
 /* ------------------------------ LOGIN ------------------------------*/
 
 .login{
@@ -72,13 +86,14 @@ section{
 /* Pie de pagina */
 
 footer{
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
     text-align: center;
     background-color: black;
     color: white;
     padding-bottom: 1vh;
+    
 }
 
 footer::before {
@@ -338,139 +353,83 @@ a:hover{
 
 /* ----------------------------- Inicio -----------------------------*/
 
-/* Imagen rotativa de inicio */
+/* Cuadricula base */
 
-.contenedor-ImagenInicio{
-    background-image: url(/img/altus.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 50%;
-    aspect-ratio: 16 / 9;
-    position: relative;
-    overflow: hidden;
-}
-
-.recorteImagen{
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-    mix-blend-mode: multiply;
-}
-
-/* Barra de navegarcion */
-
-.menu{
+.parent {
     display: grid;
-    grid-template-areas: 
-      "contenedor-LogoInicio inicio searchbar publicar contenedor-BotonIniciarSesion";
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-    gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
+    background-color: aqua;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
 }
 
-.contenedor-LogoInicio, .inicio, .searchbar, .publicar, .contenedor-BotonIniciarSesion{
+.div1{
+    grid-row-start: 1;
+    background-color: blueviolet;
     display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: aqua;
     
 }
 
-.contenedor-LogoInicio{
-    grid-area: contenedor-LogoInicio;
+.div2 {
+    grid-row-start: 2;
+    background-color: blueviolet;
 }
 
-.inicio{
-    grid-area: inicio;
-    justify-content: right;
+.div3 {
+    grid-row-start: 3;
+    background-color: blueviolet;
+    
 }
 
-.searchbar{
-    grid-area: searchbar;
-    justify-content: center;
-}
-
-.publicar{
-    grid-area: publicar;
-    justify-content: left;
-}
-
-.contenedor-BotonIniciarSesion{
-    grid-area: contenedor-BotonIniciarSesion;
-    justify-content: center;
-}
-
-.botonIniciarSesion{
-    background-color: #d8b33e;
-    border-radius: 7px;
-    border-style: none;
-    padding: 1vh;
-    padding-left: 5vh;
-    padding-right: 5vh;
-    font-size: 2.5vh;
-    transition: background-color 0.3s ease;
-}
-
-.botonIniciarSesion:hover{
-    background-color: white;
-    color:#d8b33e;
-}
-
-/* Logo */
-
-.logo{
-    width: 20%;
-}
-
-/* Busqueda */
-
-.input-wrapper{
-    background-color: white;
-    padding: 1vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* Principal */
-
-.contenedor-Inicio{
+.parent2{
     display: grid;
-    grid-template-areas:
-    "lateralIzquierdo lateralDerecho"
-    "izquierdoInferior derechoInferior"
-    ;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
-    height: 100vh;
-}
-
-.lateralDerecho, .lateralIzquierdo, .izquierdoInferior, .derechoInferior{
-    display: flex;
-    justify-content: center;
+    grid-template-columns: repeat(2, minmax(400px, 1fr));
+    grid-template-rows: repeat(2, minmax(400px, 1fr));
+    gap: 8px;
+    background-color: blueviolet;
+    width: 100vw;
+    text-align: center;
     align-items: center;
 }
 
-.lateralIzquierdo{
-    grid-area: lateralIzquierdo;
-    background-color: blue;
-    object-fit: fill;
+.div2_1, .div2_2, .div2_3, .div2_4{
+    background-color: brown;
 }
 
-.lateralDerecho{
-    grid-area: lateralDerecho;
-    background-color: red;
+.div2_1{
+    grid-column-start: 1;
+    grid-row-start: 1;
 }
 
-.izquierdoInferior{
-    grid-area: izquierdoInferior;
-    background-color: indigo;
+.div2_2{
+    grid-column-start: 2;
+    grid-row-start: 1;
 }
 
-.derechoInferior{
-    grid-area: derechoInferior;
-    background-color: green;
+.div2_3{
+    grid-column-start: 1;
+    grid-row-start: 2;
 }
+
+.div2_4{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+/* Imagen rotativa de inicio */
+
+.recorteImagen{
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/altus.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Barra de navegacion */
