@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,26 +11,41 @@
     <title>Inicio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="cuerpo-Inicio">
 
     <div class="parent">
         <div class="div1">
             <header>
-                <header>
-                    <nav class="nav-Inicio">
-                        <div class="contenedor-LogoInicio">
-                            <img class="logo" src="img/granRuna.webp" alt="granRuna">
-                            <h1 class="inicio-Texto">Inicio</h1>
+                <nav class="nav-Inicio">
+
+                    <!-- Logo + Título -->
+                    <div class="contenedor-LogoInicio">
+                        <img class="logo" src="img/granRuna.webp" alt="granRuna">
+                        <h1 class="inicio-Texto">Souls Blog</h1>
+                    </div>
+
+                    <!-- Enlaces de navegación -->
+                    <div class="nav-ListaInicio">
+                        <a class="nav-TextoInicio" href="#">Inicio</a>
+                        <div class="input-wrapper">
+                            <input type="text" id="searchbar-2" class="searchbar" placeholder="Buscar">
+                            <a href="#">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
                         </div>
-                        <div class="contenedor-NavegacionInicio">
-                            <ul class="nav-ListaInicio">
-                                <li><a class="nav-TextoInicio" href="#">Inicio</a></li>
-                                <li><a class="nav-TextoInicio" href="#">Buscar</a></li>
-                                <li><a class="nav-TextoInicio" href="#">Publicar</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                </header>
+                        <a class="nav-TextoInicio" href="#">Publicar</a>
+                    </div>
+
+                    <!-- Botón de login -->
+                    <div class="contenedor-LoginInicio">
+                        <a class="botonInicioSesion" href="login.html">
+                            <i class="fa-solid fa-circle-user" style="color: #000000;"></i>
+                            <span>Iniciar sesión</span>
+                        </a>
+                    </div>
+
+                </nav>
             </header>
         </div>
         <div class="div2">
@@ -39,13 +55,19 @@
                         <img class="recorteImagen" src="img/lienzo.png" alt="lienzo">
                     </div>
                 </div>
-                <div class="div2_2">2.2</div>
+                <div class="div2_2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Cupiditate temporibus quis architecto odio voluptate ab 
+                    dicta voluptates vero vel sequi nihil error, qui incidunt 
+                    officiis, iste quibusdam rerum facilis deserunt.
+                </div>
                 <div class="div2_3">2.3</div>
                 <div class="div2_4">2.4</div>
             </div>
-        </div>    
+        </div>
         <div class="div3">3</div>
     </div>
-
+    <script src="index.js"></script>
 </body>
+
 </html>

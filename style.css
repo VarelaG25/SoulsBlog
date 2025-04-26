@@ -6,18 +6,18 @@
     font-style: normal;
 }
 
-section{
+section {
     margin: auto;
 }
 
-body{
+body {
     margin: 0;
     position: relative;
     padding-bottom: 2vh;
     min-height: 100vh;
 }
 
-.cuerpo-Inicio{
+.cuerpo-Inicio {
     margin: 0;
     position: relative;
     padding-bottom: 0vh;
@@ -26,7 +26,7 @@ body{
 
 /* ------------------------------ LOGIN ------------------------------*/
 
-.login{
+.login {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,23 +35,24 @@ body{
 
 /* Imagenes laterales */
 
-.contenedor-Imagen{
+.contenedor-Imagen {
     display: flex;
     justify-content: center;
     padding: 1vh;
     width: 30%;
 }
 
-.imagen{
+.imagen {
     width: 50%;
     height: 50%;
     clip-path: inset(0 0 0 0 round 15px);
-    
+
 }
 
 /* Campos de texto */
 
-#usuario, #password{
+#usuario,
+#password {
     border: none;
     background-color: white;
     width: 59vh;
@@ -61,13 +62,13 @@ body{
 
 /* Boton */
 
-.contenedor-Boton{
+.contenedor-Boton {
     background-color: #1c1b19;
     display: flex;
     justify-content: center;
 }
 
-.boton-Continuar{
+.boton-Continuar {
     background-color: #d8b33e;
     border-radius: 7px;
     border-style: none;
@@ -78,14 +79,14 @@ body{
     transition: background-color 0.3s ease;
 }
 
-.boton-Continuar:hover{
+.boton-Continuar:hover {
     background-color: white;
-    color:#d8b33e;
+    color: #d8b33e;
 }
 
 /* Pie de pagina */
 
-footer{
+footer {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -93,7 +94,7 @@ footer{
     background-color: black;
     color: white;
     padding-bottom: 1vh;
-    
+
 }
 
 footer::before {
@@ -108,7 +109,7 @@ footer::before {
 
 /* Cuadro de iniciar sesion */
 
-.contendor-Login{
+.contendor-Login {
     background-color: #1c1b19;
     border: #d8b33e solid 5px;
     padding: 3vh;
@@ -120,7 +121,7 @@ footer::before {
 
 /* Logo de la pagina */
 
-.contenedor-ImagenLogin{
+.contenedor-ImagenLogin {
     background-color: #1c1b19;
     width: 40%;
     display: flex;
@@ -130,7 +131,7 @@ footer::before {
 
 /* Texto de iniciar sesion */
 
-.login-Texto{
+.login-Texto {
     background-color: #1c1b19;
     text-align: center;
     font-size: 5vh;
@@ -138,17 +139,17 @@ footer::before {
 
 /* Texto */
 
-.contenedor-Texto{
+.contenedor-Texto {
     background-color: #1c1b19;
     margin-bottom: 0;
     font-size: 3vh;
 }
 
-.fondoGris{
+.fondoGris {
     background-color: #1c1b19;
 }
 
-.contenedor-NoCuenta{
+.contenedor-NoCuenta {
     background-color: #1c1b19;
     display: flex;
     justify-content: center;
@@ -157,7 +158,7 @@ footer::before {
 
 /* Para escribir texto */
 
-.contenedor-Campo{
+.contenedor-Campo {
     background-color: white;
     margin-top: 3px;
     padding: 1vh;
@@ -170,7 +171,7 @@ footer::before {
 
 /* Logo */
 
-.contenedor-Logo{
+.contenedor-Logo {
     background-color: #1c1b19;
     display: flex;
     justify-content: center;
@@ -178,13 +179,14 @@ footer::before {
 
 /* Iconos */
 
-.fa-circle-user, .fa-lock{
+.fa-circle-user,
+.fa-lock {
     background-color: white;
 }
 
 /* Links */
 
-a:hover{
+a:hover {
     color: #d8b33e;
 }
 
@@ -192,7 +194,7 @@ a:hover{
 
 /* Logo */
 
-.contenedor-Logo-Registro{
+.contenedor-Logo-Registro {
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -202,37 +204,37 @@ a:hover{
     padding-bottom: 2vh;
 }
 
-.contenedor-Registro{
+.contenedor-Registro {
     display: grid;
-    grid-template-areas: 
-    "grid1 grid2" 
-    "grid3 grid4"
-    "grid5-6 grid5-6" 
-    "grid7 grid8" 
-    "grid9-10 grid9-10" 
-    "contenedor-BotonRegistro contenedor-BotonRegistro"
-    "grid12 grid12";
+    grid-template-areas:
+        "grid1 grid2"
+        "grid3 grid4"
+        "grid5-6 grid5-6"
+        "grid7 grid8"
+        "grid9-10 grid9-10"
+        "contenedor-BotonRegistro contenedor-BotonRegistro"
+        "grid12 grid12";
     gap: 10px;
 }
 
-.logo{
+.logo {
     width: 8%;
 }
 
-.registro-Texto{
+.registro-Texto {
     padding-left: 15px;
 }
 
 /* Cuerpo */
 
-.Registro{
+.Registro {
     display: flex;
     justify-content: center;
 }
 
 /* Campos */
 
-.campo-Texto{
+.campo-Texto {
     font-size: 2.5vh;
     outline: none;
     border-style: none;
@@ -241,11 +243,12 @@ a:hover{
     color: black;
 }
 
-.campo-Texto:hover, .campo-TextoLargo:hover{
+.campo-Texto:hover,
+.campo-TextoLargo:hover {
     color: #d8b33e;
 }
 
-.campo-TextoLargo{
+.campo-TextoLargo {
     font-size: 2.5vh;
     outline: none;
     border-style: none;
@@ -254,73 +257,81 @@ a:hover{
     color: black;
 }
 
-#fechaNacimiento{
+#fechaNacimiento {
     text-align: center;
 }
 
 /* Grid */
 
-.grid1, .grid2, .grid3, .grid4, 
-.grid5-6, .grid7, .grid8, .grid9-10, 
-.contenedor-BotonRegistro, .grid12{
+.grid1,
+.grid2,
+.grid3,
+.grid4,
+.grid5-6,
+.grid7,
+.grid8,
+.grid9-10,
+.contenedor-BotonRegistro,
+.grid12 {
     display: flex;
     flex-direction: column;
     font-size: 2.5vh;
 }
 
-.grid1{
+.grid1 {
     grid-area: grid1;
     display: flex;
 }
 
-.grid2{
+.grid2 {
     grid-area: grid2;
 }
 
-.grid3{
+.grid3 {
     grid-area: grid3;
 }
 
-.grid4{
+.grid4 {
     grid-area: grid4;
 }
 
-.grid5-6{
+.grid5-6 {
     grid-area: grid5-6;
-    
+
 }
 
-.grid7{
+.grid7 {
     grid-area: grid7;
 }
 
-.grid8{
+.grid8 {
     grid-area: grid8;
 }
 
-.contenedor-BotonRegistro, .grid9-10{
+.contenedor-BotonRegistro,
+.grid9-10 {
     padding-left: 20vh;
     padding-right: 20vh;
 }
 
-.grid9-10{
+.grid9-10 {
     grid-area: grid9-10;
 }
 
 
-.contenedor-BotonRegistro{
+.contenedor-BotonRegistro {
     grid-area: contenedor-BotonRegistro;
-    
+
 }
 
-.grid12{
+.grid12 {
     grid-area: grid12;
     text-align: center;
 }
 
 /* Lateral derecho */
 
-.LateralRegistro{
+.LateralRegistro {
     background-color: #1c1b19;
     display: flex;
     justify-content: center;
@@ -336,18 +347,18 @@ a:hover{
     font-size: 2.5vh;
 }
 
-.contenedor-BotonCargar{
+.contenedor-BotonCargar {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#iconoUser{
+#iconoUser {
     background-color: #1c1b19;
     font-size: 40vh;
 }
 
-.textoImagen{
+.textoImagen {
     background-color: #1c1b19;
 }
 
@@ -367,13 +378,13 @@ a:hover{
     align-items: center;
 }
 
-.div1{
+.div1 {
     grid-row-start: 1;
     background-color: blueviolet;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    height: 80px;
 }
 
 .div2 {
@@ -384,13 +395,13 @@ a:hover{
 .div3 {
     grid-row-start: 3;
     background-color: blueviolet;
-    
+
 }
 
-.parent2{
+.parent2 {
     display: grid;
-    grid-template-columns: repeat(2, minmax(400px, 1fr));
-    grid-template-rows: repeat(2, minmax(400px, 1fr));
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-template-rows: repeat(2, minmax(300px, 1fr));
     gap: 8px;
     background-color: blueviolet;
     width: 100vw;
@@ -398,38 +409,137 @@ a:hover{
     align-items: center;
 }
 
-.div2_1, .div2_2, .div2_3, .div2_4{
+.div2_1,
+.div2_2,
+.div2_3,
+.div2_4 {
     background-color: brown;
 }
 
-.div2_1{
+.div2_1 {
     grid-column-start: 1;
     grid-row-start: 1;
 }
 
-.div2_2{
+.div2_2 {
     grid-column-start: 2;
     grid-row-start: 1;
 }
 
-.div2_3{
+.div2_3 {
     grid-column-start: 1;
     grid-row-start: 2;
 }
 
-.div2_4{
+.div2_4 {
     grid-column-start: 2;
     grid-row-start: 2;
 }
 
 /* Imagen rotativa de inicio */
 
-.recorteImagen{
+.recorteImagen {
     width: 100%;
     height: 100%;
-    background-image: url(/img/altus.webp);
+    /* animation-name: cambiarImagenInicio; */
+    animation-duration: 50s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes cambiarImagenInicio{
+    0% {
+        background-image: url(img/altus.webp);
+    }
+    25% {
+        background-image: url(img/anor_londo.webp);
+    }
+    50% {
+        background-image: url(img/majula.webp);
+    }
+    75% {
+        background-image: url(img/irithyl.webp);
+    }
+    100% {
+        background-image: url(img/altus.webp);
+    }
 }
 
 /* Barra de navegacion */
+
+.nav-Inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    max-width: 1200px;
+    padding: 0 30px;
+}
+
+.contenedor-LogoInicio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.inicio-Texto {
+    color: white;
+    font-size: 24px;
+}
+
+.nav-ListaInicio {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-TextoInicio {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-TextoInicio:hover {
+    text-decoration: underline;
+}
+
+.contenedor-LoginInicio {
+    display: flex;
+    align-items: center;
+}
+
+.botonInicioSesion {
+    background-color: white;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: background-color 0.2s;
+}
+
+.botonInicioSesion:hover {
+    background-color: #ddd;
+}
+
+.input-wrapper:hover {
+    background-color: #050000;
+}
+
+.botonBusqueda, .searchbar{
+    background-color: transparent;
+    color: white;
+    padding: 0;
+}
+
+/* Contenido al lado de la imagen */
