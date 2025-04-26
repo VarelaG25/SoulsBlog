@@ -1,6 +1,6 @@
 * {
-    background-color: wheat;
-    color: black;
+    background-color: black;
+    color: white;
     margin: 0;
     font-family: "Alice", serif;
     font-style: normal;
@@ -370,12 +370,12 @@ a:hover {
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
     gap: 8px;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 /* === NAVBAR === */
 .div1 {
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 
 .nav-Inicio {
@@ -386,15 +386,16 @@ a:hover {
     max-width: 100%;
     margin: 0 auto;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
+    /* background-color: beige; */
 }
 
 .nav-ListaInicio{
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
     display: flex;
     align-items: center;
     gap: 30px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .logoInicio {
@@ -415,14 +416,16 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #d8b33e;
-    border-radius: 3px;
+    background-color: #1c1b19;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .searchbar{
-    background-color: transparent;
+    background-color: #1c1b19;
     font-size: 25px;
-    border: none;
+    border-style: none;
     color: white;
     text-decoration: underline;
 }
@@ -430,22 +433,63 @@ a:hover {
 .searchbar::placeholder{
     color: white;
 }
+
+.searchbar:focus{
+    outline: none;
+}
+
 .fa-magnifying-glass{
-    background-color: transparent;
+    background-color: #1c1b19;
     color: white;
     font-size: 25px;
+    border-style: none;
 }
 
 .contenedor-LogoInicio{
+    /* background-color: #d8b33e; */
     display: flex;
     justify-content: start;
     align-items: center;
+    font-size: 25px;
+}
+
+
+.botonInicioSesion{
+    background-color: #d8b33e;
+    border-radius: 7px;
+    border-style: none;
+    padding: 1vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    font-size: 2.5vh;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.botonInicioSesion:hover {
+    background-color: white;
+    color: #d8b33e;
+    text-decoration: none;
+}
+
+.iniciarSesionBoton:hover, .user:hover {
+    color: #d8b33e;
 }
 
 /* === CONTENIDO PRINCIPAL === */
 .div2 {
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     padding: 20px;
+}
+
+.div2::before {
+    content: '';
+    display: block;
+    width: 175vh;
+    height: .5vh;
+    background-color: white;
+    border-radius: 4px;
+    margin: 0 auto 10px auto;
 }
 
 .parent2 {
@@ -456,23 +500,74 @@ a:hover {
 }
 
 .div2_1, .div2_2, .div2_3, .div2_4 {
-    background-color: brown;
+    /* background-color: brown; */
     padding: 10px;
     color: white;
 }
 
-.recorteImagen {
+.contenedor-ImagenInicio {
+    position: relative;
     width: 100%;
-    height: auto;
-    display: block;
-    border: 1px solid #d8b33e;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.recorteImagen {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    padding-right: 10px;
+    object-fit: fill; /* Llena completamente respetando proporción */
+    display: block;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.base {
+    background-color: transparent;
+    z-index: 3;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.fade {
+    z-index: 1;
+    animation: fadeCycle 20s infinite;
+}
+
+/* Ciclo de fade para cada imagen */
+.fade:nth-child(1) {
+    animation-delay: 0s;
+}
+.fade:nth-child(2) {
+    animation-delay: 5s;
+}
+.fade:nth-child(3) {
+    animation-delay: 10s;
+}
+.fade:nth-child(4) {
+    animation-delay: 15s;
+}
+
+@keyframes fadeCycle {
+    0%   { opacity: 0; }
+    5%   { opacity: 1; }
+    25%  { opacity: 1; }
+    30%  { opacity: 0; }
+    100% { opacity: 0; }
+}
+
 
 /* === Ultimos posts === */
 
 .Titulo {
     font-size: 50px;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .Inicio {
@@ -486,8 +581,14 @@ a:hover {
     margin-bottom: 10px;
 }
 
+.lastPost{
+    background-color: #1c1b19;
+    border: white 2px solid;
+    border-radius: 5px;
+}
+
 .lastPost .post {
-    background-color: aqua;
+    background-color: #1c1b19;
     padding: 10px;
     margin-bottom: 8px;
     border-radius: 4px;
@@ -495,12 +596,18 @@ a:hover {
 
 .enlace {
     font-weight: bold;
-    color: black;
+    color: #d8b33e;
     text-decoration: none;
+    background-color: #1c1b19;
 }
 
 .enlace:hover {
     text-decoration: underline;
+}
+
+.colorTexto{
+    background-color: #1c1b19;
+    
 }
 
 /* === RECOMENDADOS === */
@@ -512,26 +619,33 @@ a:hover {
     max-width: 100%;
     margin-bottom: 16px;
     padding-right: 30px;
-    background-color: burlywood;
+    padding-bottom: 10px;
+    /* background-color: burlywood; */
+}
+
+.antsig{
+    padding-left: 15px;
 }
 
 .subtitulo2{
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 .articulo{
-    background-color: #d8b33e;
-    padding: 5px;
+    border: #d8b33e 2px solid;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #1c1b19;
 }
 
 .parent3{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5px;
+    gap: 5px #1c1b19;
 }
 
 .texto-Recomendado, .imagen-Recomendado{
-    background-color: blue;
+    background-color: #1c1b19;
  
 }
 
@@ -541,24 +655,28 @@ a:hover {
     align-items: center;
     flex-direction: column;
     padding-top: 40px;
-    padding-bottom: 40px;    
+    padding-bottom: 40px;   
+    background-color: #1c1b19; 
 }
 
 .itemImagen{
     width: 50%;
+    background-color: #1c1b19;
 }
 
 .elemento1{
     padding-bottom: 3px;
+    background-color: #1c1b19;
 }  
 
 .elemento2{
     padding-top: 20px;
+    background-color: #1c1b19;
 }
 
 /* === FOOTER === */
 .div3 {
-    background-color: #d8b33e;
+    /* background-color: #d8b33e; */
     text-align: center;
     padding: 10px;
 }
