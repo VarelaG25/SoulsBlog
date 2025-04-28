@@ -1,96 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/7aadadae08.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
-    <title>Registro</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<script src="https://kit.fontawesome.com/7aadadae08.js">
+	</script>
+	<link href="https://fonts.googleapis.com" rel="preconnect">
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+	<title>Registro</title>
+	<link href="style.css" rel="stylesheet">
 </head>
-
 <body>
-    <header>
-        <div class="contenedor-Logo-Registro">
-            <img class="logo" src="img/granRuna.webp" alt="granRuna">
-            <h1 class="registro-Texto">Registro</h1>
-        </div>
-    </header>
-    <div class="Registro">
-        <section>
-            <form class="contenedor-Registro" action="" method="post">
-                <div class="grid1">
-                    <label for="usuario">Usuario:</label>
-                    <div class="contenedor-Campo">
-                        <input class="campo-Texto" type="text" name="usuario" id="usuarioR">
-                    </div>
-                </div>
-                <div class="grid2">
-                    <label for="nombre">Nombre(s):</label>
-                    <div class="contenedor-Campo">
-                        <input class="campo-Texto" type="text" name="nombre" id="nombre">
-                    </div>
-                </div>
-                <div class="grid3">
-                    <label for="apPaterno">Apellido Paterno:</label>
-                    <div class="contenedor-Campo">
-                        <input class="campo-Texto" type="text" name="apellidoPaterno" id="apellidoPaterno">
-                    </div>
-                </div>
-                <div class="grid4">
-                    <label for="apMaterno">Apellido Materno:</label>
-                    <div class="contenedor-Campo">
-                        <input class="campo-Texto" type="text" name="apellidoMaterno" id="apellidoMaterno">
-                    </div>
-                </div>
-                <div class="grid5-6">
-                    <label for="correo">Correo:</label>
-                    <div class="contenedor-Campo">
-                        <input class="campo-TextoLargo" type="email" name="correo" id="correo">
-                    </div>
-                </div>
-                <div class="grid7">
-                    <label for="usuario">Contraseña:</label>
-                    <div class="contenedor-Campo">
-                        <input class="campo-Texto" type="password" name="password" id="passwordR">
-                    </div>
-                </div>
-                <div class="grid8">
-                    <label for="usuario">Confirmar contraseña:</label>
-                    <div class="contenedor-Campo">
-                        <input class="campo-Texto" type="password" name="confirmarPassword" id="confirmarPassword">
-                    </div>
-                </div>
-                <div class="grid9-10">
-                    <label for="usuario">Fecha de nacimiento:</label>
-                    <div class="contenedor-Campo">
-                        <input class="campo-Texto" type="date" name="fechaNacimiento" id="fechaNacimiento">
-                    </div>
-                </div>
-                <div class="contenedor-BotonRegistro">
-                    <input class="boton-Continuar" type="button" value="Registrar" onclick="location.href='index.html'">
-                </div>
-                <div class="grid12">
-                    <!-- <p>Al registrarte, aceptas nuestros <a href="#">Términos y condiciones</a> y nuestra <a href="#">Política de privacidad</a>.</p> -->
-                    <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesion aqui</a></p>
-                </div>
-            </form>
-        </section>
-
-        <aside class="LateralRegistro">
-            <label class="textoImagen" for="imagen">Imagen de perfil</label>
-            <i id="iconoUser" class="fa-solid fa-circle-user" style="color: #ffffff;"></i>
-            <div class="contenedor-BotonCargar">
-                <input id="botonCargarImagen" class="boton-Continuar" type="button" value="Cargar Imagen" onclick="">
-            </div>
-        </aside>
-    </div>
-    <footer>
-        <p>Varela´s Web ©</p>
-    </footer>
+	<header>
+		<div class="contenedor-Logo-Registro">
+			<img alt="granRuna" class="logo" src="img/granRuna.webp">
+			<h1 class="registro-Texto">Registro</h1>
+		</div>
+	</header>
+	<div class="Registro">
+		<section>
+			<form action="" class="contenedor-Registro" method="post">
+				<div class="grid1">
+					<label for="usuario">Usuario:</label>
+					<div class="contenedor-Campo">
+						<input class="campo-Texto" id="usuarioR" name="usuario" type="text">
+					</div>
+				</div>
+				<div class="grid2">
+					<label for="nombre">Nombre(s):</label>
+					<div class="contenedor-Campo">
+						<input class="campo-Texto" id="nombre" name="nombre" type="text">
+					</div>
+				</div>
+				<div class="grid3">
+					<label for="apPaterno">Apellido Paterno:</label>
+					<div class="contenedor-Campo">
+						<input class="campo-Texto" id="apellidoPaterno" name="apellidoPaterno" type="text">
+					</div>
+				</div>
+				<div class="grid4">
+					<label for="apMaterno">Apellido Materno:</label>
+					<div class="contenedor-Campo">
+						<input class="campo-Texto" id="apellidoMaterno" name="apellidoMaterno" type="text">
+					</div>
+				</div>
+				<div class="grid5-6">
+					<label for="correo">Correo:</label>
+					<div class="contenedor-Campo">
+						<input class="campo-TextoLargo" id="correo" name="correo" type="email">
+					</div>
+				</div>
+				<div class="grid7">
+					<label for="usuario">Contraseña:</label>
+					<div class="contenedor-Campo">
+						<input class="campo-Texto" id="passwordR" name="password" type="password">
+					</div>
+				</div>
+				<div class="grid8">
+					<label for="usuario">Confirmar contraseña:</label>
+					<div class="contenedor-Campo">
+						<input class="campo-Texto" id="confirmarPassword" name="confirmarPassword" type="password">
+					</div>
+				</div>
+				<div class="grid9-10">
+					<label for="usuario">Fecha de nacimiento:</label>
+					<div class="contenedor-Campo">
+						<input class="campo-Texto" id="fechaNacimiento" name="fechaNacimiento" type="date">
+					</div>
+				</div>
+				<div class="contenedor-BotonRegistro">
+					<input class="boton-Continuar" onclick="location.href='index.html'" type="button" value="Registrar">
+				</div>
+				<div class="grid12">
+					<!-- <p>Al registrarte, aceptas nuestros <a href="#">Términos y condiciones</a> y nuestra <a href="#">Política de privacidad</a>.</p> -->
+					<p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesion aqui</a></p>
+				</div>
+			</form>
+		</section>
+		<aside class="LateralRegistro">
+			<label class="textoImagen" for="imagen">Imagen de perfil</label> <i class="fa-solid fa-circle-user" id="iconoUser" style="color: #ffffff;"></i>
+			<div class="contenedor-BotonCargar">
+				<input class="boton-Continuar" id="botonCargarImagen" onclick="" type="button" value="Cargar Imagen">
+			</div>
+		</aside>
+	</div>
+	<footer>
+		<p>Varela´s Web ©</p>
+	</footer>
 </body>
-
 </html>

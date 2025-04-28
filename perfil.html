@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7aadadae08.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contenedor-Perfil">
+        <div class="c1">
+            <nav class="nav-Inicio">
+                <div class="contenedor-LogoInicio">
+                    <img class="logoInicio" src="img/granRuna.webp" alt="granRuna">
+                    <p class="inicio-Texto">Souls Blog</p>
+                </div>
+                <div class="nav-ListaInicio">
+                    <a class="nav-TextoInicio" href="#">Inicio</a>
+                    <div class="input-wrapper">
+                        <input type="text" id="searchbar-2" class="searchbar" placeholder="Buscar...">
+                        <a href="#">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </div>
+                    <a class="nav-TextoInicio" href="#">Publicar</a>
+                </div>
+                <div class="contenedor-LoginInicio">
+                    <a class="botonInicioSesion" href="login.html">
+                        <i class="fa-solid fa-circle-user" style="color: #ffff; background-color: transparent;"></i>
+                        <span class="iniciarSesionBoton" style="background-color: transparent;">Iniciar sesión</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="c2">
+            <h1 class="c2">Perfil</h1>
+        </div>
+
+        <div class="c3">
+            <div class="contenedor-PerfilDatos">
+                <div class="c3-1">
+                    <div class="contenedor datos">
+                        <div class="fila">
+                            <div class="columna fondoDatos">
+                                <label class="textoImagen" for="usuario">Usuario:</label>
+                                <div class="contenedor-Campo2">
+                                    <input class="campo-Texto2" type="text" name="usuario" id="user">
+                                </div>
+                            </div>
+                            <div class="columna fondoDatos">
+                                <label class="textoImagen" for="nombre">Nombre(s):</label>
+                                <div class="contenedor-Campo2">
+                                    <input class="campo-Texto2" type="text" name="nombre" id="name">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fila">
+                            <div class="columna fondoDatos">
+                                <label class="textoImagen" for="primerApellido">Primer apellido:</label>
+                                <div class="contenedor-Campo2">
+                                    <input class="campo-Texto2" type="text" name="primerApellido" id="pApellido">
+                                </div>
+                            </div>
+                            <div class="columna fondoDatos">
+                                <label class="textoImagen" for="segundoApellido">Segundo apellido:</label>
+                                <div class="contenedor-Campo2">
+                                    <input class="campo-Texto2" type="text" name="segundoApellido" id="sApellido">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="columna centrado fondoDatos">
+                            <label class="textoImagen" for="email">Correo:</label>
+                            <div class="contenedor-Campo2">
+                                <input class="campo-Texto2" type="email" name="correo" id="correoUser">
+                            </div>
+                        </div>
+
+                        <div class="columna centrado fondoDatos">
+                            <label class="textoImagen" for="fechaNac">Fecha de nacimiento:</label>
+                            <div class="contenedor-Campo2">
+                                <input class="campo-Texto2" type="date" name="fechaNac" id="fechaNacimiento">
+                            </div>
+                        </div>
+
+                        <div class="columna centrado fondoDatos">
+                            <input class="boton-Continuar" type="button" value="Editar">
+                        </div>
+                    </div>
+                </div>
+                <div class="c3-2">
+                    <div class="contenedor imagenPerfil">
+                        <div class="columna centrado">
+                            <img class="imagenCargar" id="preview" src="img/user.png" alt="Vista previa"
+                                style="visibility: visible;" />
+                        </div>
+                        <div class="columna centrado">
+                            <input type="file" id="cargarImagen" accept="image/*" class="input-file">
+                            <label for="cargarImagen" class="boton-cargar">Cargar Imagen</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="div3">
+            <p class="footer">Varela´s Web ©</p>
+        </div>
+    </div>
+
+    <script src="scripts/perfil.js"></script>
+</body>
+
+</html>

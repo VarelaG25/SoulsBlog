@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7aadadae08.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <title>Publicar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contenedor-Publicacion">
+        <div class="p1">
+            <nav class="nav-Inicio">
+                <div class="contenedor-LogoInicio">
+                    <img class="logoInicio" src="img/granRuna.webp" alt="granRuna">
+                    <p class="inicio-Texto">Souls Blog</p>
+                </div>
+                <div class="nav-ListaInicio">
+                    <a class="nav-TextoInicio" href="#">Inicio</a>
+                    <div class="input-wrapper">
+                        <input type="text" id="searchbar-2" class="searchbar" placeholder="Buscar...">
+                        <a href="#">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </div>
+                    <a class="nav-TextoInicio" href="#">Publicar</a>
+                </div>
+                <div class="contenedor-LoginInicio">
+                    <a class="botonInicioSesion" href="login.html">
+                        <i class="fa-solid fa-circle-user" style="color: #ffff; background-color: transparent;"></i>
+                        <span class="iniciarSesionBoton" style="background-color: transparent;">Iniciar sesión</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="p2">
+            <h1 class="c2">Publicar</h1>
+        </div>
+        <div class="p3">
+            <div class="contenedor-Publicar">
+                <div class="p3-1">
+                    <img class="imagen-Lateral" src="img/cartaHierophant.webp" alt="Hierophant">
+                </div>
+                <div class="p3-2">
+                    <div class="formulario-grid">
+                        <!-- Título -->
+                        <div class="campo">
+                            <label class="label-campo" for="titulo">Título:</label>
+                            <input class="input-campo" type="text" name="titulo" id="titulo">
+                        </div>
+                    
+                        <!-- Juego -->
+                        <div class="campo">
+                            <label class="label-campo" for="juego">Juego:</label>
+                            <input class="input-campo" type="text" name="juego" id="juego">
+                        </div>
+                    
+                        <!-- Imagen -->
+                        <div class="campo imagen">
+                            <img class="imagenCargar" id="preview" src="img/user.png" alt="Vista previa" style="visibility: visible;">
+                        </div>
+                    
+                        <!-- Subtítulo -->
+                        <div class="campo">
+                            <label class="label-campo" for="subtitulo">Subtítulo:</label>
+                            <input class="input-campo" type="text" name="subtitulo" id="subtitulo">
+                        </div>
+                    
+                        <!-- Categoría -->
+                        <div class="campo">
+                            <label class="label-campo" for="categoria">Categoría:</label>
+                            <input class="input-campo" type="text" name="categoria" id="categoria">
+                        </div>
+                    
+                        <!-- Vacío (para que se acomode el grid) -->
+                        <div class="campo"></div>
+                    
+                        <!-- Autor -->
+                        <div class="campo">
+                            <label class="label-campo" for="autor">Autor:</label>
+                            <input class="input-campo" type="text" name="autor" id="autor">
+                        </div>
+                    
+                        <!-- Fecha -->
+                        <div class="campo">
+                            <label class="label-campo" for="fecha">Fecha:</label>
+                            <input class="input-campo" type="date" name="fecha" id="fecha">
+                        </div>
+                    
+                        <!-- Botón cargar imagen -->
+                        <div class="campo cargar-boton">
+                            <input type="file" id="cargarImagen" accept="image/*" class="input-file">
+                            <label for="cargarImagen" class="boton-cargar">Cargar Imagen</label>
+                        </div>
+                    
+                        <!-- Descripción -->
+                        <div class="campo descripcion" style="grid-column: span 3;">
+                            <label class="label-campo" for="descripcion">Descripción:</label>
+                            <textarea class="input-campo descripcion-area" name="descripcion" id="descripcion" rows="5"></textarea>
+                        </div>
+                    
+                        <!-- Botón Publicar -->
+                        <div class="campo boton-publicar" style="grid-column: span 3;">
+                            <input class="boton-cargar" type="button" value="Publicar">
+                        </div>
+                    </div>
+                </div>                         
+                <div class="p3-3">
+                    <img class="imagen-Lateral" src="img/cartaEmpress.webp" alt="Empress">
+                </div>
+            </div>
+        </div>
+        <div class="div3">
+            <p class="footer">Varela´s Web ©</p>
+        </div>
+    </div>
+    <script src="scripts/publish.js"></script>
+</body>
+
+</html>

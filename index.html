@@ -1,148 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/7aadadae08.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<script src="https://kit.fontawesome.com/7aadadae08.js">
+	</script>
+	<link href="https://fonts.googleapis.com" rel="preconnect">
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+	<title>Inicio</title>
+	<link href="style.css" rel="stylesheet">
 </head>
-
 <body class="cuerpo-Inicio">
-
-    <div class="parent">
-
-        <header class="div1">
-            <nav class="nav-Inicio">
-                <!-- Logo + Título -->
-                <div class="contenedor-LogoInicio">
-                    <img class="logoInicio" src="img/granRuna.webp" alt="granRuna">
-                    <p class="inicio-Texto">Souls Blog</p>
-                </div>
-
-                <!-- Enlaces de navegación -->
-                <div class="nav-ListaInicio">
-                    <a class="nav-TextoInicio" href="#">Inicio</a>
-                    <div class="input-wrapper">
-                        <input type="text" id="searchbar-2" class="searchbar" placeholder="Buscar...">
-                        <a href="#">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </a>
-                    </div>
-                    <a class="nav-TextoInicio" href="#">Publicar</a>
-                </div>
-
-                <!-- Botón de login -->
-                <div class="contenedor-LoginInicio">
-                    <a class="botonInicioSesion" href="login.html">
-                        <i class="fa-solid fa-circle-user" style="color: #ffff; background-color: transparent;"></i>
-                        <span class="iniciarSesionBoton" style="background-color: transparent;">Iniciar sesión</span>
-                    </a>
-                </div>
-            </nav>
-        </header>
-
-        <div class="div2">
-            <div class="parent2">
-                <div class="div2_1">
-                    <div class="contenedor-ImagenInicio">
-                        <img class="recorteImagen fade" src="img/altus.webp" alt="altus">
-                        <img class="recorteImagen fade" src="img/anor_londo.webp" alt="anor londo">
-                        <img class="recorteImagen fade" src="img/irithyl.webp" alt="irithyl">
-                        <img class="recorteImagen fade" src="img/majula.webp" alt="majula">
-                        <img class="recorteImagen base" src="img/lienzo.webp" alt="lienzo">
-                    </div>
-                </div>
-                <div class="div2_2">
-                    <h1 class="texto Titulo">Bienvenido a Souls Blog!</h1>
-                    <p class="texto Inicio">
-                        Explora el vasto y oscuro universo de FromSoftware en un solo lugar.
-                        En este blog encontrarás análisis profundos, lore oculto, guías, builds, y
-                        curiosidades de todos los juegos del estudio: desde el pionero Demon’s Souls, la
-                        mítica trilogía Dark Souls, el crudo Bloodborne, el desafiante Sekiro, hasta el
-                        colosal mundo abierto de Elden Ring.
-                    </p>
-                    <p class="texto Inicio">
-                        Disfruta de artículos semanales que exploran el trasfondo de personajes, teorías del lore,
-                        comparativas entre juegos, recomendaciones de mods, reseñas de bosses y más. Un espacio hecho
-                        para los verdaderos tarnished, cazadores, shinobi y undead.
-                    </p>
-                </div>
-                <div class="div2_3">
-                    <h2 class="subtitulo">Ultimos posts</h2>
-                    <br>
-                    <div class="lastPost">
-                        <div class="post">
-                            <a href="#" class="enlace">¿Por qué es tan difícil el juego?</a>
-                            <p class="colorTexto">En este artículo analizaremos la dificultad de los juegos de
-                                FromSoftware y su impacto en la comunidad.</p>
-                        </div>
-                        <div class="post">
-                            <a href="#" class="enlace">Lore de Elden Ring</a>
-                            <p class="colorTexto">Un vistazo profundo al lore de Elden Ring y sus personajes.</p>
-                        </div>
-                        <div class="post">
-                            <a href="#" class="enlace">Guía de Elden Ring</a>
-                            <p class="colorTexto">Consejos y trucos para sobrevivir en el mundo de Elden Ring.</p>
-                        </div>
-                        <div class="post">
-                            <a href="#" class="enlace">Mejores builds de Elden Ring</a>
-                            <p class="colorTexto">Exploramos las mejores builds para Elden Ring y cómo optimizarlas.</p>
-                        </div>
-                        <div class="post">
-                            <a href="#" class="enlace">Curiosidades de Dark Souls</a>
-                            <p class="colorTexto ">Descubre algunas de las curiosidades más interesantes de la saga Dark
-                                Souls.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="div2_4">
-                    <div class="recomendados">
-                        <h2 class="subtitulo2">Recomendados</h2>
-                        <div>
-                            <a class="antsig" href="#">Anterior</a>
-                            <a class="antsig" href="#">Siguiente</a>
-                        </div>
-                    </div>
-                    <div class="articulo">
-                        <div class="parent3">
-                            <div class="texto-Recomendado">
-                                <h3 class="elemento1">Titulo</h3>
-                                <h4 class="elemento1">Autor</h4>
-                                <p class="elemento1">26/04/2025</p>
-                                <p class="elemento2">
-                                    Lorem ipsum dolor sit amet consectetur,
-                                    adipisicing elit. Cupiditate quia fugiat
-                                    dolores deleniti ad at, inventore rem
-                                    magni? Inventore totam eveniet fuga
-                                    accusamus minima natus commodi amet
-                                    repellat similique iste.
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Quod similique, voluptates
-                                    accusamus libero nobis amet maxime tempora
-                                    facilis necessitatibus? Doloribus velit enim
-                                    incidunt quod itaque ex, minima est quos
-                                    dolorum?
-                                </p>
-                            </div>
-                            <div class="imagen-Recomendado">
-                                <img class="itemImagen" src="img/espada.webp" alt="imagen-Articulo">
-                                <p style="font-weight: bold; background-color: transparent;">Item</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="div3">
-            <p class="footer">Varela´s Web ©</p>
-        </div>
-    </div>
-    <script src="index.js"></script>
+	<div class="parent">
+		<header class="div1">
+			<nav class="nav-Inicio">
+				<!-- Logo + Título -->
+				<div class="contenedor-LogoInicio">
+					<img alt="granRuna" class="logoInicio" src="img/granRuna.webp">
+					<p class="inicio-Texto">Souls Blog</p>
+				</div><!-- Enlaces de navegación -->
+				<div class="nav-ListaInicio">
+					<a class="nav-TextoInicio" href="#">Inicio</a>
+					<div class="input-wrapper">
+						<input class="searchbar" id="searchbar-2" placeholder="Buscar..." type="text"> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+					</div><a class="nav-TextoInicio" href="#">Publicar</a>
+				</div><!-- Botón de login -->
+				<div class="contenedor-LoginInicio">
+					<a class="botonInicioSesion" href="login.html"><i class="fa-solid fa-circle-user" style="color: #ffff; background-color: transparent;"></i> <span class="iniciarSesionBoton" style="background-color: transparent;">Iniciar sesión</span></a>
+				</div>
+			</nav>
+		</header>
+		<div class="div2">
+			<div class="parent2">
+				<div class="div2_1">
+					<div class="contenedor-ImagenInicio"><img alt="altus" class="recorteImagen fade" src="img/altus.webp"> <img alt="anor londo" class="recorteImagen fade" src="img/anor_londo.webp"> <img alt="irithyl" class="recorteImagen fade" src="img/irithyl.webp"> <img alt="majula" class="recorteImagen fade" src="img/majula.webp"> <img alt="lienzo" class="recorteImagen base" src="img/lienzo.webp"></div>
+				</div>
+				<div class="div2_2">
+					<h1 class="texto Titulo">Bienvenido a Souls Blog!</h1>
+					<p class="texto Inicio">Explora el vasto y oscuro universo de FromSoftware en un solo lugar. En este blog encontrarás análisis profundos, lore oculto, guías, builds, y curiosidades de todos los juegos del estudio: desde el pionero Demon’s Souls, la mítica trilogía Dark Souls, el crudo Bloodborne, el desafiante Sekiro, hasta el colosal mundo abierto de Elden Ring.</p>
+					<p class="texto Inicio">Disfruta de artículos semanales que exploran el trasfondo de personajes, teorías del lore, comparativas entre juegos, recomendaciones de mods, reseñas de bosses y más. Un espacio hecho para los verdaderos tarnished, cazadores, shinobi y undead.</p>
+				</div>
+				<div class="div2_3">
+					<h2 class="subtitulo">Ultimos posts</h2><br>
+					<div class="lastPost">
+						<div class="post">
+							<a class="enlace" href="#">¿Por qué es tan difícil el juego?</a>
+							<p class="colorTexto">En este artículo analizaremos la dificultad de los juegos de FromSoftware y su impacto en la comunidad.</p>
+						</div>
+						<div class="post">
+							<a class="enlace" href="#">Lore de Elden Ring</a>
+							<p class="colorTexto">Un vistazo profundo al lore de Elden Ring y sus personajes.</p>
+						</div>
+						<div class="post">
+							<a class="enlace" href="#">Guía de Elden Ring</a>
+							<p class="colorTexto">Consejos y trucos para sobrevivir en el mundo de Elden Ring.</p>
+						</div>
+						<div class="post">
+							<a class="enlace" href="#">Mejores builds de Elden Ring</a>
+							<p class="colorTexto">Exploramos las mejores builds para Elden Ring y cómo optimizarlas.</p>
+						</div>
+						<div class="post">
+							<a class="enlace" href="#">Curiosidades de Dark Souls</a>
+							<p class="colorTexto">Descubre algunas de las curiosidades más interesantes de la saga Dark Souls.</p>
+						</div>
+					</div>
+				</div>
+				<div class="div2_4">
+					<div class="recomendados">
+						<h2 class="subtitulo2">Recomendados</h2>
+						<div>
+							<a class="antsig" href="#">Anterior</a> <a class="antsig" href="#">Siguiente</a>
+						</div>
+					</div>
+					<div class="articulo">
+						<div class="parent3">
+							<div class="texto-Recomendado">
+								<h3 class="elemento1">Titulo</h3>
+								<h4 class="elemento1">Autor</h4>
+								<p class="elemento1">26/04/2025</p>
+								<p class="elemento2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate quia fugiat dolores deleniti ad at, inventore rem magni? Inventore totam eveniet fuga accusamus minima natus commodi amet repellat similique iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod similique, voluptates accusamus libero nobis amet maxime tempora facilis necessitatibus? Doloribus velit enim incidunt quod itaque ex, minima est quos dolorum?</p>
+							</div>
+							<div class="imagen-Recomendado">
+								<img alt="imagen-Articulo" class="itemImagen" src="img/espada.webp">
+								<p style="font-weight: bold; background-color: transparent;">Item</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="div3">
+			<p class="footer">Varela´s Web ©</p>
+		</div>
+	</div>
+	<script src="index.js">
+	</script>
 </body>
-
 </html>
