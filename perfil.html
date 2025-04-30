@@ -15,105 +15,136 @@
 <body>
     <div class="contenedor-Perfil">
         <div class="c1">
-            <nav class="nav-Inicio">
-                <div class="contenedor-LogoInicio">
-                    <img class="logoInicio" src="img/granRuna.webp" alt="granRuna">
-                    <p class="inicio-Texto">Souls Blog</p>
-                </div>
-                <div class="nav-ListaInicio">
-                    <a class="nav-TextoInicio" href="#">Inicio</a>
-                    <div class="input-wrapper">
-                        <input type="text" id="searchbar-2" class="searchbar" placeholder="Buscar...">
-                        <a href="search.html">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </a>
-                    </div>
-                    <a class="nav-TextoInicio" href="#">Publicar</a>
-                </div>
-                <div class="contenedor-LoginInicio">
-                    <a class="botonInicioSesion" href="login.html">
-                        <i class="fa-solid fa-circle-user" style="color: #ffff; background-color: transparent;"></i>
-                        <span class="iniciarSesionBoton" style="background-color: transparent;">Iniciar sesión</span>
-                    </a>
-                </div>
-            </nav>
+            <div class="fila">
+				<div class="columna centerFlex width100">
+					<div class="contenido">
+						<img alt="granRuna" class="imagenNavBar" src="img/granRuna.webp">
+						<span>Souls Blog</span>
+					</div>
+				</div>
+				<div class="columna soloFlex width100">
+					<ul class="navegacion centrado-Items">
+						<li><a class="enlace-secundario sinSubrayado" href="index.html">Inicio</a></li>
+						<li class="contenedor-Campo soloFlex centrado-Items"><input class="campo-Texto" id="searchbar-2"
+								placeholder="Buscar..." type="text"><a href="search.html"><i
+									class="fa-solid fa-magnifying-glass"
+									style="color: black; background-color: white;"></i></a></li>
+						<li><a class="enlace-secundario sinSubrayado" href="publish.html">Publicar</a></li>
+					</ul>
+				</div>
+				<div class="columna soloFlex width100">
+					<div class="fila">
+						<div class="columna alineadoDerecha width50">
+							<input class="boton-secundario width75" type="button" value="Registrarse"
+								onclick="window.location.href='register.html'">
+						</div>
+						<div class="columna centrado-Items width50">
+							<input class="boton width75" type="button" value="Iniciar Sesion"
+								onclick="window.location.href='login.html'">
+						</div>
+					</div>
+				</div>
+			</div>
         </div>
-
         <div class="c2">
-            <h1 class="c2">Perfil</h1>
-        </div>
-
-        <div class="c3">
-            <div class="contenedor-PerfilDatos">
-                <div class="c3-1">
-                    <div class="contenedor datos">
-                        <div class="fila">
-                            <div class="columna fondoDatos">
-                                <label class="textoImagen" for="usuario">Usuario:</label>
-                                <div class="contenedor-Campo2">
-                                    <input class="campo-Texto2" type="text" name="usuario" id="user">
-                                </div>
-                            </div>
-                            <div class="columna fondoDatos">
-                                <label class="textoImagen" for="nombre">Nombre(s):</label>
-                                <div class="contenedor-Campo2">
-                                    <input class="campo-Texto2" type="text" name="nombre" id="name">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="fila">
-                            <div class="columna fondoDatos">
-                                <label class="textoImagen" for="primerApellido">Primer apellido:</label>
-                                <div class="contenedor-Campo2">
-                                    <input class="campo-Texto2" type="text" name="primerApellido" id="pApellido">
-                                </div>
-                            </div>
-                            <div class="columna fondoDatos">
-                                <label class="textoImagen" for="segundoApellido">Segundo apellido:</label>
-                                <div class="contenedor-Campo2">
-                                    <input class="campo-Texto2" type="text" name="segundoApellido" id="sApellido">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="columna centrado fondoDatos">
-                            <label class="textoImagen" for="email">Correo:</label>
-                            <div class="contenedor-Campo2">
-                                <input class="campo-Texto2" type="email" name="correo" id="correoUser">
-                            </div>
-                        </div>
-
-                        <div class="columna centrado fondoDatos">
-                            <label class="textoImagen" for="fechaNac">Fecha de nacimiento:</label>
-                            <div class="contenedor-Campo2">
-                                <input class="campo-Texto2" type="date" name="fechaNac" id="fechaNacimiento">
-                            </div>
-                        </div>
-
-                        <div class="columna centrado fondoDatos">
-                            <input class="boton-Continuar" type="button" value="Editar">
-                        </div>
-                    </div>
-                </div>
-                <div class="c3-2">
-                    <div class="contenedor imagenPerfil">
-                        <div class="columna centrado fondoNegroColumna">
-                            <img class="imagenCargar" id="preview" src="img/user.png" alt="Vista previa"
-                                style="visibility: visible;" />
-                        </div>
-                        <div class="columna centrado">
-                            <input type="file" id="cargarImagen" accept="image/*" class="input-file">
-                            <label for="cargarImagen" class="boton-cargar">Cargar Imagen</label>
-                        </div>
-                    </div>
+            <div class="fila">
+                <div class="columna">
+                    <h1>Perfil</h1>
                 </div>
             </div>
         </div>
-        <div class="div3">
-            <p class="footer">Varela´s Web ©</p>
-        </div>
-    </div>
+		<div class="c3">
+			<div class="perfilPrincipal padding2 centerFlex">
+			<!-- <form class="perfilPrincipal centerFlex" action="index.html" method="post"> -->
+				<div class="c3-1">
+					<div class="registroRecuadro padding2 fondoGrisOscuro bordeBlanco">
+						<div class="fila fondoGrisOscuro">
+							<div class="columna fondoGrisOscuro padding2 width50  centrado-Items">
+								<h2 class="fondoGrisOscuro">Datos personales</h2>
+							</div>
+						</div>
+						<div class="fila fondoGrisOscuro">
+							<div class="columna fondoGrisOscuro marginLeft2 marginTop1 width100 ">
+								<label class="fondoGrisOscuro" for="usuarioR">Usuario:</label>
+								<div class="contenedor-Campo fondoGrisOscuro">
+									<input class="campo-Texto width100" id="usuarioR" name="usuario" type="text">
+								</div>
+							</div>
+							<div class="columna fondoGrisOscuro marginLeft2 marginTop1 width100 ">
+								<label class="fondoGrisOscuro" for="nombre">Nombre(s):</label>
+								<div class="contenedor-Campo fondoGrisOscuro">
+									<input class="campo-Texto fondoGrisOscuro width100" id="nombre" name="nombre" type="text">
+								</div>
+							</div>
+						</div>
+						<div class="fila fondoGrisOscuro">
+							<div class="columna fondoGrisOscuro marginLeft2 marginTop1 width100 ">
+								<label class="fondoGrisOscuro" for="apellidoPaterno">Apellido Paterno:</label>
+								<div class="contenedor-Campo">
+									<input class="campo-Texto width100" id="apellidoPaterno" name="apellidoPaterno"
+										type="text">
+								</div>
+							</div>
+							<div class="columna fondoGrisOscuro marginLeft2 marginTop1 width100 ">
+								<label class="fondoGrisOscuro" for="apellidoMaterno">Apellido Materno:</label>
+								<div class="contenedor-Campo">
+									<input class="campo-Texto width100" id="apellidoMaterno" name="apellidoMaterno"
+										type="text">
+								</div>
+							</div>
+						</div>
+						<div class="fila fondoGrisOscuro">
+							<div class="columna fondoGrisOscuro marginLeft2 marginTop1 width100 ">
+								<label class="fondoGrisOscuro" for="correo">Correo:</label>
+								<div class="contenedor-Campo">
+									<input class="campo-Texto width100" id="correo" name="correo" type="email">
+								</div>
+							</div>
+						</div>
+						<div class="fila fondoGrisOscuro">
+							<div class="columna fondoGrisOscuro marginLeft2 marginTop1 width50 ">
+								<label class="fondoGrisOscuro" for="fechaNacimiento">Fecha de nacimiento:</label>
+								<div class="contenedor-Campo fondoGrisOscuro">
+									<input class="campo-Texto fondoGrisOscuro width100" id="fechaNacimiento" name="fechaNacimiento"
+										type="date">
+								</div>
+							</div>
+						</div>
+						<div class="fila fondoGrisOscuro">
+							<div class="columna fondoGrisOscuro marginLeft2 marginTop1 width50  centrado-Items">
+								<input class="boton width100" type="submit" value="Confirmar cambios" onclick="window.location.href='index.html'">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="c3-2 centerFlex">
+					<div class="imagenRegistroRecuadro fondoGrisOscuro padding2 bordeBlanco">
+						<div class="fila fondoGrisOscuro">
+							<div class="columna fondoGrisOscuro centrado-Items">
+								<label>Foto de perfil</label>
+							</div>
+						</div>
+						<div class="fila fondoGrisOscuro">
+							<div class="columna bordeDorado fondoGrisOscuro centrado-Items">
+								<img class="imagenCargar fondoGrisOscuro" id="preview" src="img/user.webp"
+									alt="Vista previa" style="visibility: visible;" />
+							</div>
+						</div>
+						<div class="fila fondoGrisOscuro">
+							<div class="columna fondoGrisOscuro centrado-Items">
+								<input type="file" id="cargarImagen" accept="image/*" class="input-file">
+								<label for="cargarImagen" class="boton">Cargar Imagen</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!-- </form> -->
+			</div>
+		</div>
+		<div class="footer-Global">
+			<p class="footer">Varela´s Web ©</p>
+		</div>
+	</div>
 
     <script src="scripts/perfil.js"></script>
 </body>

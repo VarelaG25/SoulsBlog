@@ -15,106 +15,103 @@
 <body>
     <div class="contenedor-Publicacion">
         <div class="p1">
-            <nav class="nav-Inicio">
-                <div class="contenedor-LogoInicio">
-                    <img class="logoInicio" src="img/granRuna.webp" alt="granRuna">
-                    <p class="inicio-Texto">Souls Blog</p>
-                </div>
-                <div class="nav-ListaInicio">
-                    <a class="nav-TextoInicio" href="index.html">Inicio</a>
-                    <div class="input-wrapper">
-                        <input type="text" id="searchbar-2" class="searchbar" placeholder="Buscar...">
-                        <a href="search.html">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </a>
+            <div class="fila">
+                <div class="columna centerFlex width100">
+                    <div class="contenido">
+                        <img alt="granRuna" class="imagenNavBar" src="img/granRuna.webp">
+                        <span>Souls Blog</span>
                     </div>
-                    <a class="nav-TextoInicio" href="publish.html">Publicar</a>
                 </div>
-                <div class="contenedor-LoginInicio">
-                    <a class="botonInicioSesion" href="login.html">
-                        <i class="fa-solid fa-circle-user" style="color: #ffff; background-color: transparent;"></i>
-                        <span class="iniciarSesionBoton" style="background-color: transparent;">Iniciar sesión</span>
-                    </a>
+                <div class="columna soloFlex width100">
+                    <ul class="navegacion centrado-Items">
+                        <li><a class="enlace-secundario sinSubrayado" href="index.html">Inicio</a></li>
+                        <li class="contenedor-Campo soloFlex centrado-Items"><input class="campo-Texto" id="searchbar-2"
+                                placeholder="Buscar..." type="text"><a href="search.html"><i
+                                    class="fa-solid fa-magnifying-glass"
+                                    style="color: black; background-color: white;"></i></a></li>
+                        <li><a class="enlace-secundario sinSubrayado" href="publish.html">Publicar</a></li>
+                    </ul>
                 </div>
-            </nav>
+                <div class="columna soloFlex width100">
+                    <div class="fila">
+                        <div class="columna alineadoDerecha width50">
+                            <input class="boton-secundario width75" type="button" value="Registrarse"
+                                onclick="window.location.href='register.html'">
+                        </div>
+                        <div class="columna centrado-Items width50">
+                            <input class="boton width75" type="button" value="Iniciar Sesion"
+                                onclick="window.location.href='login.html'">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="p2">
-            <h1 class="c2">Publicar articulo</h1>
+            <div class="fila">
+                <div class="columna">
+                    <h1>Publicar articulo</h1>
+                </div>
+            </div>
         </div>
         <div class="p3">
-            <div class="contenedor-Publicar">
-                <div class="p3-1">
-                    <img class="imagen-Lateral" src="img/cartaHierophant.webp" alt="Hierophant">
+            <div class="publicarPrincipal centerFlex">
+                <div class="p3-1 centerFlex">
+                    <div class="columna centerFlex">
+                        <img class="imagen-Lateral" src="img/cartaHierophant.webp" alt="Hierophant">
+                    </div>
                 </div>
-                <div class="p3-2">
+                <div class="p3-2 bordeBlanco">
                     <div class="formulario-grid">
-                        <!-- Título -->
                         <div class="campo">
-                            <label class="label-campo" for="titulo">Título:</label>
-                            <input class="input-campo" type="text" name="titulo" id="titulo">
+                            <label class="fondoGrisOscuro" for="titulo">Título:</label>
+                            <input class="contenedor-Campo campo-Texto" type="text" name="titulo" id="titulo">
                         </div>
-        
-                        <!-- Juego -->
                         <div class="campo">
-                            <label class="label-campo" for="juego">Juego:</label>
-                            <input class="input-campo" type="text" name="juego" id="juego">
+                            <label class="fondoGrisOscuro" for="juego">Juego:</label>
+                            <input class="contenedor-Campo campo-Texto" type="text" name="juego" id="juego">
                         </div>
-        
-                        <!-- Imagen (ocupa 2 filas) -->
-                        <div class="campo imagen" style="grid-row: span 2;">
+                        <div class="campo imagen bordeDorado" style="grid-row: span 2;">
                             <img class="imagenCargar" id="preview" src="img/espada.webp" alt="Vista previa" style="visibility: visible;">
                         </div>
-        
-                        <!-- Subtítulo -->
                         <div class="campo">
-                            <label class="label-campo" for="subtitulo">Subtítulo:</label>
-                            <input class="input-campo" type="text" name="subtitulo" id="subtitulo">
+                            <label class="fondoGrisOscuro" for="subtitulo">Subtítulo:</label>
+                            <input class="contenedor-Campo campo-Texto" type="text" name="subtitulo" id="subtitulo">
                         </div>
-        
-                        <!-- Categoría -->
                         <div class="campo">
-                            <label class="label-campo" for="categoria">Categoría:</label>
-                            <input class="input-campo" type="text" name="categoria" id="categoria">
+                            <label class="fondoGrisOscuro" for="categoria">Categoría:</label>
+                            <input class="contenedor-Campo campo-Texto" type="text" name="categoria" id="categoria">
                         </div>
-        
-                        <!-- Autor -->
                         <div class="campo">
-                            <label class="label-campo" for="autor">Autor:</label>
-                            <input class="input-campo" type="text" name="autor" id="autor">
+                            <label class="fondoGrisOscuro" for="autor">Autor:</label>
+                            <input class="contenedor-Campo campo-Texto" type="text" name="autor" id="autor">
                         </div>
-                        
-                        <!-- Fecha -->
                         <div class="campo">
-                            <label class="label-campo" for="fecha">Fecha:</label>
-                            <input class="input-campo" type="date" name="fecha" id="fecha">
+                            <label class="fondoGrisOscuro" for="fecha">Fecha:</label>
+                            <input class="contenedor-Campo campo-Texto" type="date" name="fecha" id="fecha">
                         </div>
-                        
-                        <!-- Botón cargar imagen -->
-                        <div class="campo cargar-boton">
+                        <div class="campo centerFlex">
+                            <p style="visibility: hidden;">0</p>
                             <input type="file" id="cargarImagen" accept="image/*" class="input-file">
-                            <label for="cargarImagen" class="boton-cargar">Cargar Imagen</label>
+                            <label for="cargarImagen" class="boton centerFlex width100">Cargar Imagen</label>
                         </div>
-                        <!-- Vacío para alinear grid -->
                         <div class="campo"></div>
-        
-                        <!-- Descripción -->
                         <div class="campo descripcion" style="grid-column: span 3;">
-                            <label class="label-campo" for="descripcion">Descripción:</label>
-                            <textarea class="input-campo descripcion-area" name="descripcion" id="descripcion" rows="5"></textarea>
+                            <label class="fondoGrisOscuro" for="descripcion">Descripción:</label>
+                            <textarea class="contenedor-Campo campo-Texto descripcion-area" name="descripcion" id="descripcion" rows="5"></textarea>
                         </div>
-        
-                        <!-- Botón Publicar -->
                         <div class="campo boton-publicar" style="grid-column: span 3;">
-                            <input class="boton-cargar botonPublicar" type="button" value="Publicar">
+                            <input class="boton" type="button" value="Publicar">
                         </div>
                     </div>
                 </div>
                 <div class="p3-3">
-                    <img class="imagen-Lateral" src="img/cartaEmpress.webp" alt="Empress">
+                    <div class="columna centerFlex">
+                        <img class="imagen-Lateral" src="img/cartaEmpress.webp" alt="Empress">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="div3">
+        <div class="footer-Global">
             <p class="footer">Varela´s Web ©</p>
         </div>
     </div>

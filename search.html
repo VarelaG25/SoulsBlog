@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,109 +11,128 @@
     <title>Busqueda</title>
     <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
-    <div class="contenedorBusqueda">
+    <div class="contenedor-Busqueda">
         <div class="b1">
-            <nav class="nav-Inicio">
-                <div class="contenedor-LogoInicio">
-                    <img class="logoInicio" src="img/granRuna.webp" alt="granRuna">
-                    <p class="inicio-Texto">Souls Blog</p>
-                </div>
-                <div class="nav-ListaInicio">
-                    <a class="nav-TextoInicio" href="index.html">Inicio</a>
-                    <div class="input-wrapper">
-                        <input type="text" id="searchbar-2" class="searchbar" placeholder="Buscar...">
-                        <a href="search.html">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </a>
+            <div class="fila">
+                <div class="columna centerFlex width100">
+                    <div class="contenido">
+                        <img alt="granRuna" class="imagenNavBar" src="img/granRuna.webp">
+                        <span>Souls Blog</span>
                     </div>
-                    <a class="nav-TextoInicio" href="publish.html">Publicar</a>
                 </div>
-                <div class="contenedor-LoginInicio">
-                    <a class="botonInicioSesion" href="login.html">
-                        <i class="fa-solid fa-circle-user" style="color: #ffff; background-color: transparent;"></i>
-                        <span class="iniciarSesionBoton" style="background-color: transparent;">Iniciar sesión</span>
-                    </a>
+                <div class="columna soloFlex width100">
+                    <ul class="navegacion centrado-Items">
+                        <li><a class="enlace-secundario sinSubrayado" href="index.html">Inicio</a></li>
+                        <li class="contenedor-Campo soloFlex centrado-Items"><input class="campo-Texto" id="searchbar-2"
+                                placeholder="Buscar..." type="text"><a href="search.html"><i
+                                    class="fa-solid fa-magnifying-glass"
+                                    style="color: black; background-color: white;"></i></a></li>
+                        <li><a class="enlace-secundario sinSubrayado" href="publish.html">Publicar</a></li>
+                    </ul>
                 </div>
-            </nav>
-        </div>
-        <div class="b2">
-            <h1 class="c2-Resultado">Resultado de la busqueda:</h1>
-            <br>
-            <div class="filtros">
-                <h2>Filtrar por: </h2>
-                <input class="boton-cargar btnFiltro" type="button" value="Mas reciente">
-                <input class="boton-cargar btnFiltro" type="button" value="Mas antiguo">
+                <div class="columna soloFlex width100">
+                    <div class="fila">
+                        <div class="columna alineadoDerecha width50">
+                            <input class="boton-secundario width75" type="button" value="Registrarse"
+                                onclick="window.location.href='register.html'">
+                        </div>
+                        <div class="columna centrado-Items width50">
+                            <input class="boton width75" type="button" value="Iniciar Sesion"
+                                onclick="window.location.href='login.html'">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="b3">
-            <div class="contenedor-BusquedaPrincipal">
-                <div class="b3-1">
-                    <div class="busquedas">
-                        <!-- Enlace -->
-                        <div class="campo enlaceTexto">
-                            <a class="paddingEnlace" href="article.html">Titulo del Post 1</a>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum quis dolore repudiandae quas! Molestiae dolorum rem dignissimos ad unde earum consequatur.</p>
-                        </div>
-                        <!-- Imagen -->
-                        <div class="campo imagen">
-                            <img class="imagenEnlace" id="preview" src="img/espada.webp" alt="Vista previa"
-                                style="visibility: visible;">
-                        </div>
-                        <!-- Enlace -->
-                        <div class="campo enlaceTexto">
-                            <a class="paddingEnlace" href="article.html">Titulo del Post 2</a>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum quis dolore repudiandae quas! Molestiae dolorum rem dignissimos ad unde earum consequatur.</p>
-                        </div>
-                        <!-- Imagen -->
-                        <div class="campo imagen">
-                            <img class="imagenEnlace" id="preview" src="img/altus.webp" alt="Vista previa"
-                                style="visibility: visible;">
-                        </div>
-                        <!-- Enlace -->
-                        <div class="campo enlaceTexto">
-                            <a class="paddingEnlace" href="article.html">Titulo del Post 3</a>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum quis dolore repudiandae quas! Molestiae dolorum rem dignissimos ad unde earum consequatur.</p>
-                        </div>
-                        <!-- Imagen -->
-                        <div class="campo imagen">
-                            <img class="imagenEnlace" id="preview" src="img/irithyl.webp" alt="Vista previa"
-                                style="visibility: visible;">
-                        </div>
-                        <!-- Enlace -->
-                        <div class="campo enlaceTexto">
-                            <a class="paddingEnlace" href="article.html">Titulo del Post 4</a>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum quis dolore repudiandae quas! Molestiae dolorum rem dignissimos ad unde earum consequatur.</p>
-                        </div>
-                        <!-- Imagen -->
-                        <div class="campo imagen">
-                            <img class="imagenEnlace" id="preview" src="img/majula.webp" alt="Vista previa"
-                                style="visibility: visible;">
-                        </div>
-                        <!-- Enlace -->
-                        <div class="campo enlaceTexto">
-                            <a class="paddingEnlace" href="article.html">Titulo del Post 5</a>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum quis dolore repudiandae quas! Molestiae dolorum rem dignissimos ad unde earum consequatur.</p>
-                        </div>
-                        <!-- Imagen -->
-                        <div class="campo imagen">
-                            <img class="imagenEnlace" id="preview" src="img/cartaDevil.webp" alt="Vista previa"
-                                style="visibility: visible;">
+        <div class="b2">
+            <div class="columna width100 padding2">
+                <div class="fila filaBusqueda">
+                    <div class="columna">
+                        <div class="centrar filaFlex">
+                            <h1>Resultado de la búsqueda:</h1>
+                            <h2>Lorem</h2>
                         </div>
                     </div>
+                </div>
+                <div class="fila width25 filaFiltros gap-md marginTop1">
+                    <div class="columna width100">
+                        <input class="boton" type="button" value="Anterior">
+                    </div>
+                    <div class="columna width100">
+                        <input class="boton" type="button" value="Siguiente">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="b3 height100">
+            <div class="busquedaPrincipal">
+                <div class="b3-1">
+                    <div class="contenedorBusqueda margin2">
+                        <div class="fila">
+                            <div class="columna">
+                                <a class="enlace-primario" href="article.html">Titulo del Post 1</a>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum quis dolore
+                                    repudiandae quas! Molestiae dolorum rem dignissimos ad unde earum consequatur.</p>
+                            </div>
+                            <div class="columna bordeDorado">
+                                <img class="imagenBusqueda " src="img/espada.webp" alt="Vista previa">
+                            </div>
+                        </div>
+                        <div class="fila">
+                            <div class="columna">
+                                <a class="enlace-primario" href="article.html">Titulo del Post 2</a>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum quis dolore
+                                    repudiandae quas! Molestiae dolorum rem dignissimos ad unde earum consequatur.</p>
+                            </div>
+                            <div class="columna bordeDorado">
+                                <img class="imagenBusqueda " src="img/altus.webp" alt="Vista previa">
+                            </div>
+                        </div>
+                        <div class="fila">
+                            <div class="columna">
+                                <a class="enlace-primario" href="article.html">Titulo del Post 3</a>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum quis dolore
+                                    repudiandae quas! Molestiae dolorum rem dignissimos ad unde earum consequatur.</p>
+                            </div>
+                            <div class="columna bordeDorado">
+                                <img class="imagenBusqueda " src="img/irithyl.webp" alt="Vista previa">
+                            </div>
+                        </div>
+                        <div class="fila">
+                            <div class="columna">
+                                <a class="enlace-primario" href="article.html">Titulo del Post 4</a>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum quis dolore
+                                    repudiandae quas! Molestiae dolorum rem dignissimos ad unde earum consequatur.</p>
+                            </div>
+                            <div class="columna bordeDorado">
+                                <img class="imagenBusqueda " src="img/majula.webp" alt="Vista previa">
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- </div>
                     <div class="AnteriorSiguiente">
                         <a href="#">Anterior</a>
                         <a href="#">Siguiente</a>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="b3-2">
-                    <img class="imagen-Lateral" src="img/cartaHierophant.webp" alt="The world">
+                    <div class="fila">
+                        <div class="columna centerFlex">
+                            <img class="imagen-Busqueda" src="img/cartaWorld.webp" alt="The world">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="div3">
+        <div class="footer-Global">
             <p class="footer">Varela´s Web ©</p>
         </div>
     </div>
 </body>
+
 </html>

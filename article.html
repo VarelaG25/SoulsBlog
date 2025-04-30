@@ -13,126 +13,118 @@
 </head>
 
 <body>
-    <div class="contenedorArticulo">
+    <div class="contenedor-Articulo">
         <div class="a1">
-            <nav class="nav-Inicio">
-                <div class="contenedor-LogoInicio">
-                    <img class="logoInicio" src="img/granRuna.webp" alt="granRuna">
-                    <p class="inicio-Texto">Souls Blog</p>
-                </div>
-                <div class="nav-ListaInicio">
-                    <a class="nav-TextoInicio" href="index.html">Inicio</a>
-                    <div class="input-wrapper">
-                        <input type="text" id="searchbar-2" class="searchbar" placeholder="Buscar...">
-                        <a href="search.html">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </a>
-                    </div>
-                    <a class="nav-TextoInicio" href="publish.html">Publicar</a>
-                </div>
-                <div class="contenedor-LoginInicio">
-                    <a class="botonInicioSesion" href="login.html">
-                        <i class="fa-solid fa-circle-user" style="color: #ffff; background-color: transparent;"></i>
-                        <span class="iniciarSesionBoton" style="background-color: transparent;">Iniciar sesión</span>
-                    </a>
-                </div>
-            </nav>
+            <div class="fila">
+				<div class="columna centerFlex width100">
+					<div class="contenido">
+						<img alt="granRuna" class="imagenNavBar" src="img/granRuna.webp">
+						<span>Souls Blog</span>
+					</div>
+				</div>
+				<div class="columna soloFlex width100">
+					<ul class="navegacion centrado-Items">
+						<li><a class="enlace-secundario sinSubrayado" href="index.html">Inicio</a></li>
+						<li class="contenedor-Campo soloFlex centrado-Items"><input class="campo-Texto" id="searchbar-2"
+								placeholder="Buscar..." type="text"><a href="search.html"><i
+									class="fa-solid fa-magnifying-glass"
+									style="color: black; background-color: white;"></i></a></li>
+						<li><a class="enlace-secundario sinSubrayado" href="publish.html">Publicar</a></li>
+					</ul>
+				</div>
+				<div class="columna soloFlex width100">
+					<div class="fila">
+						<div class="columna alineadoDerecha width50">
+							<input class="boton-secundario width75" type="button" value="Registrarse"
+								onclick="window.location.href='register.html'">
+						</div>
+						<div class="columna centrado-Items width50">
+							<input class="boton width75" type="button" value="Iniciar Sesion"
+								onclick="window.location.href='login.html'">
+						</div>
+					</div>
+				</div>
+			</div>
         </div>
         <div class="a2">
-            <h1 class="c2">Articulo</h1>
+            <div class="fila">
+                <div class="columna">
+                    <h1>Articulo</h1>
+                </div>
+            </div>
         </div>
         <div class="a3">
-            <div class="contenedor-ArticuloPrincipal">
+            <div class="articuloPrincipal">
                 <div class="a3-1">
-                    <img class="imagen-Lateral" src="img/cartaHierophant.webp" alt="Hierophant">
+                    <div class="columna centerFlex">
+                        <img class="imagen-Lateral" src="img/cartaHierophant.webp" alt="Hierophant">
+                    </div>
                 </div>
-                <div class="a3-2">
+                <div class="a3-2 bordeBlanco">
                     <div class="articuloInformacion">
-                        <!-- Título -->
-                        <div class="campo centro">
-                            <label class="label-campo" for="autor">Autor:</label>
-                            <label class="label-campo" for="autor">nombre del autor</label>
+                        <!-- <form class="articuloInformacion centerFlex" action="index.html" method="post"> -->
+                        <div class="campo centerFlex">
+                            <label class="fondoGrisOscuro" for="autor">Autor:</label>
+                            <label class="fondoGrisOscuro" for="autor">nombre del autor</label>
                         </div>
-
-                        <!-- Imagen (ocupa 2 filas) -->
-                        <div class="campo imagen" style="grid-row: span 2;">
+                        <div class="campo centerFlex bordeDorado" style="grid-row: span 2;">
                             <img class="imagenCargar" id="preview" src="img/espada.webp" alt="Vista previa"
                                 style="visibility: visible;">
                         </div>
-
-                        <!-- Juego -->
-                        <div class="campo centro">
-                            <label class="label-campo" for="juego">Juego:</label>
-                            <label class="label-campo" for="juego">nombre del juego</label>
+                        <div class="campo centerFlex">
+                            <label class="fondoGrisOscuro" for="juego">Juego:</label>
+                            <label class="fondoGrisOscuro" for="juego">nombre del juego</label>
                         </div>
-
-                        <!-- Fecha -->
-                        <div class="campo centro">
-                            <label class="label-campo" for="fecha">Fecha:</label>
-                            <label class="label-campo" for="fecha">25/02/25</label>
+                        <div class="campo centerFlex">
+                            <label class="fondoGrisOscuro" for="fecha">Fecha:</label>
+                            <label class="fondoGrisOscuro" for="fecha">25/02/25</label>
                         </div>
-
-
-                        <!-- Categoría -->
-                        <div class="campo centro">
-                            <label class="label-campo" for="categoria">Categoría:</label>
-                            <label class="label-campo" for="categoria">nombre categoria</label>
+                        <div class="campo centerFlex">
+                            <label class="fondoGrisOscuro" for="categoria">Categoría:</label>
+                            <label class="fondoGrisOscuro" for="categoria">nombre categoria</label>
                         </div>
-
-                        <!-- Vacío para alinear grid -->
-                        <div class="campo"></div>
-
-                        <!-- Autor -->
-                        <div class="campo centro">
-                            <label class="label-campo" for="titulo">Titulo del articulo</label>
+                        <div class="campo centerFlex"></div>
+                        <div class="campo centerFlex">
+                            <label class="fondoGrisOscuro" style="text-decoration: underline;" for="titulo">Titulo del articulo</label>
                         </div>
-
-                        <!-- Vacío para alinear grid -->
-                        <div class="campo"></div>
-
-                        <!-- Vacío para alinear grid -->
-                        <div class="campo"></div>
-
-                        <!-- Subtítulo -->
-                        <div class="campo centro">
-                            <label class="label-campo" for="subtitulo">Subtitulo del articulo</label>
+                        <div class="campo centerFlex"></div>
+                        <div class="campo centerFlex"></div>
+                        <div class="campo centerFlex">
+                            <label class="fondoGrisOscuro" for="subtitulo">Subtitulo del articulo</label>
                         </div>
-
-                        <!-- Vacío para alinear grid -->
-                        <div class="campo"></div>
-
-                        <!-- Vacío para alinear grid -->
-                        <div class="campo"></div>
-
-                        <!-- Descripción -->
-                        <div class="campo descripcion" style="grid-column: span 3;">
-                            <label class="label-campo" for="descripcion">Descripción:</label>
+                        <div class="campo centerFlex"></div>
+                        <div class="campo centerFlex"></div>
+                        <div class="campo centerFlex descripcion" style="grid-column: span 3;">
+                            <label class="fondoGrisOscuro" for="descripcion">Descripción:</label>
                             <br>
-                            <p class="label-campo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            <p class="fondoGrisOscuro">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                                 Minus asperiores accusantium necessitatibus reprehenderit omnis 
                                 ex modi laborum fugiat nobis sapiente minima reiciendis nam quam, 
                                 quae, et assumenda culpa explicabo cupiditate.
-                                <br><br>
+                                <br>
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                                 Recusandae, dolorum quia tempore in perferendis distinctio 
                                 harum blanditiis enim sed quidem tenetur, officia rem repellat 
                                 ipsum ex molestias doloribus. Expedita, in? Lorem ipsum dolor sit 
                                 amet consectetur adipisicing elit.
-                                <br><br>
+                                <br>
                                 Atque, id earum! Minus accusamus perferendis eos molestiae esse 
                                 maxime, laudantium corporis odio reprehenderit laborum magnam. 
                                 Alias esse vitae quae quidem assumenda.</p>
                         </div>
+                        <!-- </form> -->
                     </div>
                 </div>
                 <div class="a3-3">
-                    <img class="imagen-Lateral" src="img/cartaHierophant.webp" alt="Hierophant">
+                    <div class="columna centerFlex">
+                        <img class="imagen-Lateral" src="img/cartaEmpress.webp" alt="Hierophant">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="div3">
-            <p class="footer">Varela´s Web ©</p>
-        </div>
+        <div class="footer-Global">
+			<p class="footer">Varela´s Web ©</p>
+		</div>
     </div>
     <script src="scripts/publish.js"></script>
 </body>
