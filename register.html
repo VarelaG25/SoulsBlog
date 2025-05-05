@@ -12,81 +12,125 @@
 	<link href="style.css" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<div class="contenedor-Logo-Registro">
-			<img alt="granRuna" class="logo" src="img/granRuna.webp">
-			<h1 class="registro-Texto">Registro</h1>
-		</div>
-	</header>
-	<div class="Registro">
-		<section>
-			<form action="" class="contenedor-Registro" method="post">
-				<div class="grid1">
-					<label for="usuario">Usuario:</label>
-					<div class="contenedor-Campo">
-						<input class="campo-Texto" id="usuarioR" name="usuario" type="text">
+	<div class="contenedor-Registro">
+		<div class="r1">
+			<form class="registroPrincipal centerFlex" action="conexiones/registro.php" method="post" enctype="multipart/form-data">
+				<div class="r1-1">
+					<div class="registroRecuadro">
+						<div class="fila ">
+							<div class="columna padding2 width50  centrado-Items">
+								<img class="imagenLogin " src="img/granRuna.webp" alt="granRuna">
+								<h1 class="">Registro</h1>
+							</div>
+						</div>
+						<div class="fila ">
+							<div class="columna marginLeft2 marginTop1 width100 ">
+								<label for="usuarioR">Usuario:</label>
+								<div class="contenedor-Campo">
+									<input class="campo-Texto width100" id="usuarioR" name="usuario" type="text"
+										required>
+								</div>
+							</div>
+							<div class="columna marginLeft2 marginTop1 width100 ">
+								<label for="nombre">Nombre(s):</label>
+								<div class="contenedor-Campo">
+									<input class="campo-Texto width100" id="nombre" name="nombre" type="text" required>
+								</div>
+							</div>
+						</div>
+						<div class="fila ">
+							<div class="columna marginLeft2 marginTop1 width100 ">
+								<label for="apellidoPaterno">Apellido Paterno:</label>
+								<div class="contenedor-Campo">
+									<input class="campo-Texto width100" id="apellidoPaterno" name="primerApellido"
+										type="text" required>
+								</div>
+							</div>
+							<div class="columna marginLeft2 marginTop1 width100 ">
+								<label for="apellidoMaterno">Apellido Materno:</label>
+								<div class="contenedor-Campo">
+									<input class="campo-Texto width100" id="apellidoMaterno" name="segundoApellido"
+										type="text" required>
+								</div>
+							</div>
+						</div>
+						<div class="fila ">
+							<div class="columna marginLeft2 marginTop1 width100 ">
+								<label for="correo">Correo:</label>
+								<div class="contenedor-Campo">
+									<input class="campo-Texto width100" id="correo" name="correo" type="email" required>
+								</div>
+							</div>
+						</div>
+						<div class="fila ">
+							<div class="columna marginLeft2 marginTop1 width100 ">
+								<label for="passwordR">Contraseña:</label>
+								<div class="contenedor-Campo">
+									<input class="campo-Texto width100" id="contrasenia" name="contrasenia"
+										type="password" required>
+								</div>
+							</div>
+							<div class="columna marginLeft2 marginTop1 width100 ">
+								<label for="confirmarPassword">Confirmar contraseña:</label>
+								<div class="contenedor-Campo">
+									<input class="campo-Texto width100" id="confirmarContrasenia"
+										name="confirmarContrasenia" type="password" required>
+								</div>
+							</div>
+						</div>
+						<div class="fila ">
+							<div class="columna marginLeft2 marginTop1 width50 ">
+								<label for="fechaNacimiento">Fecha de nacimiento:</label>
+								<div class="contenedor-Campo">
+									<input class="campo-Texto width100" id="fechaNacimiento" name="fechaNacimiento"
+										type="date" required>
+								</div>
+							</div>
+						</div>
+						<div class="fila ">
+							<div class="columna marginLeft2 marginTop1 width50  centrado-Items">
+								<input class="boton width100" type="submit" value="Registrar"
+									onclick="verConfirmarContrasenia()">
+							</div>
+						</div>
+						<div class="fila ">
+							<div class="columna marginLeft2 marginTop1 width100  centrado-Items">
+								<p class="">¿Ya tienes una cuenta?
+									<a class="enlace-primario " href="login.html">Inicia sesión aquí</a>
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="grid2">
-					<label for="nombre">Nombre(s):</label>
-					<div class="contenedor-Campo">
-						<input class="campo-Texto" id="nombre" name="nombre" type="text">
+				<div class="r1-2 centerFlex bordeBlanco fondoGrisOscuro">
+					<div class="imagenRegistroRecuadro">
+						<div class="fila fondoGrisOscuro">
+							<div class="columna fondoGrisOscuro centrado-Items">
+								<label class="fondoGrisOscuro">Foto de perfil</label>
+							</div>
+						</div>
+						<div class="fila fondoGrisOscuro">
+							<div class="columna bordeDorado fondoGrisOscuro centrado-Items">
+								<img class="imagenCargar fondoGrisOscuro" id="preview" src="img/user.webp"
+									alt="Vista previa" style="visibility: visible;" />
+							</div>
+						</div>
+						<div class="fila fondoGrisOscuro">
+							<div class="columna width100 fondoGrisOscuro centrado-Items">
+								<p id="nombreArchivo" class="fondoGrisOscuro">Sin archivo seleccionado</p>
+								<input name="imagen" type="file" id="cargarImagen" accept="image/*" class="input-file">
+								<label for="cargarImagen" class="boton centerFlex width100">Cargar
+									Imagen</label>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="grid3">
-					<label for="apPaterno">Apellido Paterno:</label>
-					<div class="contenedor-Campo">
-						<input class="campo-Texto" id="apellidoPaterno" name="apellidoPaterno" type="text">
-					</div>
-				</div>
-				<div class="grid4">
-					<label for="apMaterno">Apellido Materno:</label>
-					<div class="contenedor-Campo">
-						<input class="campo-Texto" id="apellidoMaterno" name="apellidoMaterno" type="text">
-					</div>
-				</div>
-				<div class="grid5-6">
-					<label for="correo">Correo:</label>
-					<div class="contenedor-Campo">
-						<input class="campo-TextoLargo" id="correo" name="correo" type="email">
-					</div>
-				</div>
-				<div class="grid7">
-					<label for="usuario">Contraseña:</label>
-					<div class="contenedor-Campo">
-						<input class="campo-Texto" id="passwordR" name="password" type="password">
-					</div>
-				</div>
-				<div class="grid8">
-					<label for="usuario">Confirmar contraseña:</label>
-					<div class="contenedor-Campo">
-						<input class="campo-Texto" id="confirmarPassword" name="confirmarPassword" type="password">
-					</div>
-				</div>
-				<div class="grid9-10">
-					<label for="usuario">Fecha de nacimiento:</label>
-					<div class="contenedor-Campo">
-						<input class="campo-Texto" id="fechaNacimiento" name="fechaNacimiento" type="date">
-					</div>
-				</div>
-				<div class="contenedor-BotonRegistro">
-					<input class="boton-Continuar" onclick="location.href='index.html'" type="button" value="Registrar">
-				</div>
-				<div class="grid12">
-					<!-- <p>Al registrarte, aceptas nuestros <a href="#">Términos y condiciones</a> y nuestra <a href="#">Política de privacidad</a>.</p> -->
-					<p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesion aqui</a></p>
 				</div>
 			</form>
-		</section>
-		<aside class="LateralRegistro">
-			<label class="textoImagen" for="imagen">Imagen de perfil</label> <i class="fa-solid fa-circle-user" id="iconoUser" style="color: #ffffff;"></i>
-			<div class="contenedor-BotonCargar">
-				<input class="boton-Continuar" id="botonCargarImagen" onclick="" type="button" value="Cargar Imagen">
-			</div>
-		</aside>
+		</div>
+		<div class="footer-Global">
+			<p class="footer">Varela´s Web ©</p>
+		</div>
 	</div>
-	<footer>
-		<p>Varela´s Web ©</p>
-	</footer>
+	<script src="scripts/cargarImagen.js"></script>
 </body>
 </html>

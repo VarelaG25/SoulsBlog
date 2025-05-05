@@ -13,53 +13,64 @@
 </head>
 
 <body>
-
-    <div class="login">
-
-        <section class="contenedor-Imagen">
-            <img class="imagen" src="img/cartaDevil.webp" alt="Devil">
-        </section>
-
-        <section>
-            <form class="contendor-Login" action="" method="post">
-                <div class="contenedor-Logo">
-                    <img class="contenedor-ImagenLogin" src="img/granRuna.webp" alt="granRuna">
+    <div class="contenedor-Login">
+        <div class="l1">
+            <!-- <div class="loginPrincipal"> -->
+            <form class="loginPrincipal" action="conexiones/login.php" method="post">
+                <div class="l1-1 centerFlex">
+                    <img class="imagen-Lateral" src="img/cartaDevil.webp" alt="Hierophant">
                 </div>
-                <h1 class="login-Texto">Iniciar Sesion</h1>
-                <div class ="contenedor-Texto">
-                    <label class="fondoGris" for="usuario">Usuario:</label>
-                </div>
-                <div class="contenedor-Campo">
-                    <i class="fa-solid fa-circle-user" style="color: #000000;"></i>
-                    <input type="text" name="usuario" id="usuario" required>
-                </div>
-                <br>
-                <div class ="contenedor-Texto">
-                    <label class="fondoGris" for="password">Contraseña:</label>
-                </div>
-                <div class="contenedor-Campo">
-                    <i class="fa-solid fa-lock" style="color: #000000;"></i>
-                    <input type="password" name="password" id="password" required>
-                </div>
-                <br>
-                <div class="contenedor-Boton">
-                    <input class="boton-Continuar" type="submit" value="Continuar">
+                <div class="l1-2 bordeBlanco fondoGrisOscuro">
+                    <div class="loginRecuadro">
+                        <div class="fila fondoGrisOscuro">
+                            <div class="columna fondoGrisOscuro centrado-Items">
+                                <img class="imagenLogin fondoGrisOscuro" src="img/granRuna.webp" alt="granRuna">
+                                <h1 class="fondoGrisOscuro">Iniciar Sesion</h1>
+                            </div>
+                        </div>
+                        <div class="fila padding5 fondoGrisOscuro">
+                            <div class="columna width100 fondoGrisOscuro">
+                                <label class="fondoGrisOscuro" for="correo">Correo:</label>
+                                <div class="contenedor-Campo">
+                                    <input class="campo-Texto width100" type="text" name="correo" id="email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fila padding5 fondoGrisOscuro">
+                            <div class="columna width100 fondoGrisOscuro">
+                                <label class="fondoGrisOscuro" for="contrasenia">Contraseña:</label>
+                                <div class="contenedor-Campo">
+                                    <input class="campo-Texto width100" type="text" name="contrasenia" id="password">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fila padding2 fondoGrisOscuro">
+                            <div class="columna fondoGrisOscuro">
+                                <p class="fondoGrisOscuro">¿No tienes cuenta? <a class="enlace-primario fondoGrisOscuro" href="register.html">Crea una aqui</a></p>
+                            </div>
+                        </div>
+                        <div class="fila padding5 fondoGrisOscuro">
+                            <div class="columna width50 fondoGrisOscuro centerFlex">
+                                <input class="boton width100" type="submit" value="Continuar">
+                            </div>
+                        </div>
+                        <div class="fila padding2 fondoGrisOscuro">
+                            <div class="columna fondoGrisOscuro">
+                                <p class="fondoGrisOscuro">Omitir inicio de sesion <a class="enlace-primario fondoGrisOscuro" href="index.php">aqui</a></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <br>
                 <div class="contenedor-NoCuenta">
                     <p class="fondoGris">¿No tienes cuenta? <a class="fondoGris" href="register.html">Crea una aqui</a></p>
                 </div>
             </form>
-        </section>
-
-        <section class="contenedor-Imagen">
-            <img class="imagen" src="img/cartaDeath.webp" alt="Devil">
-        </section>
-
-    </div>
-    <footer>
-        <p>Varela´s Web ©</p>
-    </footer>
+            <!-- </div> -->
+        </div>
+        <div class="footer-Global">
+            <p class="footer">Varela´s Web ©</p>
+        </div>
 </body>
 
 </html>
